@@ -38,11 +38,6 @@ chrome.extension.onConnect.addListener(function (port) {
     port.onDisconnect.addListener(function(port) {
         chrome.extension.onMessage.removeListener(extensionListener);
     });
-
-    // port.onMessage.addListener(function (message) {
-    //     port.postMessage(message);
-    // });
-
 });
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     return true;
