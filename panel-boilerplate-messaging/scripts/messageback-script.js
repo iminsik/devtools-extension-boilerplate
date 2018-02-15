@@ -1,7 +1,9 @@
 var count = 0;
 document.querySelectorAll('a').forEach(function(elm) {
-  elm.addEventListener('click', function() {
-     sendObjectToDevTools({content: "The count of clicking anchor tag: " + count});
+  elm.addEventListener('click', function(event) {
+     var self = event.srcElement;
+     console.error('TARGET:', self);
+     sendObjectToDevTools({content: self.innerHTML});
      count++;
   });
 });

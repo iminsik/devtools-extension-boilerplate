@@ -4,3 +4,4 @@
 // chrome.devtools.*
 // chrome.extension.*
 sendObjectToInspectedPage({action: "script", content: "scripts/messageback-script.js"});
+//sendObjectToInspectedPage({action: "code", content: "var DemoPanel = true;"});
