@@ -15,6 +15,7 @@
     });
 
     // Listen to messages from the background page
+    // And eventually render the message.content to Panel
     port.onMessage.addListener(function (message) {
       document.querySelector('#insertmessagebutton').innerHTML = message.content;
     });
