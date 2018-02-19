@@ -1,0 +1,20 @@
+{
+  "name": "Alaska Airlines Shopping BigData",
+  "version": "0.1",
+  "description": "A boilerplate to display user interaction status in Alaska Airlines Shopping Matrix page",
+  "devtools_page": "htmls/devtools.html",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["scripts/injectMessageHandlers.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "scripts/extensionMessageHandlers.js"
+    ]
+  },
+  "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+  "manifest_version": 2
+}
