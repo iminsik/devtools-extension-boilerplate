@@ -1,5 +1,5 @@
 (function() {
-  var defaultContent = 'Shopping Big Data Panel!'
+  var defaultContent = "Let's wait for ANY Shopping User Interaction...";
   var port = chrome.extension.connect({ name: "Panel Channel" });
   port.onMessage.addListener(function(message) {
     var element = document.querySelector('#messageFromInspectedWindow');

@@ -9,3 +9,9 @@ chrome.extension.onConnect.addListener(function(port) {
         chrome.extension.onMessage.removeListener(extensionListener);
       });
     });
+
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+  if(changeInfo.status === 'complete') {
+    chrome.tabs.executeScript(tabId, {file: "scripts/initPanel.js"} );
+  }
+});

@@ -3,3 +3,4 @@ window.addEventListener("message", function(event) {
     chrome.extension.sendMessage(event.data, function(response){ console.log(response); })
   }
 });
+
