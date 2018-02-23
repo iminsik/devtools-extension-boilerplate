@@ -1,7 +1,7 @@
 chrome.devtools.panels.create(
   "Shopping Big Data",
   null,
-  "../htmls/panel.html",
+  "../htmls/shoppingpanel/build/index.html",
   function(panel) {
     
   });
