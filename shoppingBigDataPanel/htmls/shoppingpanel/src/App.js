@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Shopping Big Data Object Debugger</h1>
         </header>
         <p className="App-intro">
-          <ReactJson src={this.props.message} />
+          <ReactJson theme="paraiso" src={this.props.message} />
         </p>
       </div>
     );
