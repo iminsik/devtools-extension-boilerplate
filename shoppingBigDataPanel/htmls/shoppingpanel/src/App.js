@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">User behaviors captured in Shopping Matrix page</h1>
+          <h1 classname="app-title">user behaviors captured in shopping matrix page</h1>
         </header>
         <p className="App-intro">
           <ReactJson displayDataTypes={false} theme="paraiso" src={this.props.message} />
